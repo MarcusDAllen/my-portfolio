@@ -1,0 +1,80 @@
+/* Main contact page styling */
+.contact {
+    background-color: #f8f9fa;  /* Light background for a clean, professional look */
+    height: 100vh;               /* Full viewport height */
+    display: flex;               /* Flexbox for layout */
+    flex-direction: column;      /* Stack the content vertically */
+    justify-content: flex-start; /* Align items to the top of the page */
+    align-items: center;         /* Center content horizontally */
+    text-align: center;          /* Center the text */
+    padding: 20px;               /* Add some padding around the content */
+    font-family: Arial, sans-serif; /* Clean and modern font */
+  }
+  
+  /* Title styling */
+  .contact h1 {
+    font-size: 28px;             /* Adjust the heading size */
+    color: #333;                 /* Dark text color */
+    margin-bottom: 10px;         /* Reduced space below the heading */
+  }
+  
+  /* Subheading styling */
+  .contact h3 {
+    font-size: 20px;             /* Slightly smaller font for subheadings */
+    color: #555;                 /* Slightly lighter color for subheadings */
+    margin: 8px 0;               /* Add vertical space between each h3 */
+  }
+  
+  /* Link styling */
+  .contact a {
+    color: #0077b5;              /* LinkedIn blue color for the link */
+    text-decoration: none;       /* Remove underline */
+    font-weight: bold;           /* Make the link text bold */
+    margin: 10px 0;              /* Add some margin to the links */
+    display: inline-block;       /* Allows setting margin around the link */
+  }
+  
+  .contact a:hover {
+    color: #005582;              /* Darker blue color on hover for LinkedIn */
+    text-decoration: underline;  /* Underline on hover for a clear interaction effect */
+  }
+  
+  /* Section for contact details (email, phone, LinkedIn) */
+  .contact-details {
+    display: flex;
+    flex-direction: column;      /* Stack details vertically */
+    align-items: center;         /* Center the details horizontally */
+    margin-top: 10px;            /* Slightly smaller space above the details section */
+  }
+  
+  /* Each contact method container (email, phone, LinkedIn) */
+  .contact-detail {
+    background-color: #ffffff;   /* White background for each contact box */
+    padding: 15px;                /* Reduce padding inside the contact boxes */
+    border-radius: 8px;           /* Rounded corners for each box */
+    width: 100%;                  /* Full width, but we will set max-width below */
+    max-width: 500px;             /* Limit the width of the contact box */
+    margin-bottom: 10px;          /* Reduce space between each contact detail box */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern feel */
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 600px) {
+    .contact {
+      padding: 10px; /* Reduce padding on smaller screens */
+    }
+  
+    .contact h1 {
+      font-size: 24px; /* Adjust heading size for smaller screens */
+    }
+  
+    .contact h3 {
+      font-size: 18px; /* Adjust subheading size */
+    }
+  
+    .contact-detail {
+      width: 90%; /* Make contact details take up more width on smaller screens */
+      margin-bottom: 20px; /* Increase space between contact boxes on mobile */
+    }
+  }
+  

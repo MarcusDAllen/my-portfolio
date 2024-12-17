@@ -1,0 +1,39 @@
+.navbar {
+    display: flex; /* Flexbox layout */
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px 0; /* Add padding for the navbar */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+  }
+  
+  /* Container for navbar links */
+  .navbar-links {
+    display: flex; /* Flexbox for the links */
+    flex-grow: 1; /* Ensures it stretches fully */
+    justify-content: space-between; /* Evenly space out the links */
+    align-items: center; /* Vertically center the links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling each individual link box */
+  .navbar-link {
+    flex: 1; /* Equal width for all links */
+    text-align: center; /* Center the text horizontally */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Font size */
+    padding: 10px 0; /* Add padding vertically */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid white; /* White border around links */
+    box-sizing: border-box; /* Ensure padding/border is included in width */
+    list-style: none;
+  }
+  
+  /* Hover effect for links */
+  .navbar-link:hover {
+    background-color: #f0a500; /* Change background color on hover */
+    color: #333; /* Text color on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    border-color: #f0a500; /* Border color on hover */
+  }
